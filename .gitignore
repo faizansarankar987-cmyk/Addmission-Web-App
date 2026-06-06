@@ -1,0 +1,72 @@
+# =========================
+# ENV FILES
+# =========================
+.env
+.env.*
+*.env
+
+# =========================
+# SPRING BOOT / MAVEN
+# =========================
+target/
+logs/
+*.log
+
+# Maven Wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# Application secrets
+application-local.properties
+application-secret.properties
+
+# =========================
+# STS / ECLIPSE
+# =========================
+.project
+.classpath
+.settings/
+.springBeans
+.sts4-cache/
+
+# =========================
+# INTELLIJ IDEA
+# =========================
+.idea/
+*.iml
+
+# =========================
+# VS CODE
+# =========================
+.vscode/
+
+# =========================
+# NODE / REACT / VITE
+# =========================
+node_modules/
+dist/
+build/
+coverage/
+
+# npm
+npm-debug.log*
+package-lock.json
+
+# yarn
+yarn-debug.log*
+yarn-error.log*
+
+# pnpm
+.pnpm-store/
+
+# =========================
+# OS FILES
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# UPLOADS
+# =========================
+uploads/
+temp/

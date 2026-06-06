@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Admission Confirmation</title>
+    <style>
+        /* Inline CSS is safer for email clients */
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; color: #333; }
+        .container { max-width: 600px; margin: auto; background: #f9f9f9; padding: 20px; border: 1px solid #ddd; }
+        .header { text-align: center; padding-bottom: 10px; }
+        .footer { text-align: center; font-size: 12px; color: #777; padding-top: 20px; }
+        .btn { display: inline-block; padding: 10px 20px; color: white; background: #28a745; text-decoration: none; border-radius: 4px; }
+        .info { margin: 15px 0; }
+        .info-label { font-weight: bold; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h2>Admission Confirmed</h2>
+    </div>
+
+    <p>Hi <strong>${studentname}</strong>,</p>
+    <p>Congratulations! Your admission for the course <strong>${coursename}</strong> has been confirmed on <strong>${date}</strong>.</p>
+
+    <div class="info">
+        <p><span class="info-label">Application ID:</span> ${applicationId}</p>
+        <p><span class="info-label">Course Name:</span> ${coursename}</p>
+        <p><span class="info-label">Date of Confirmation:</span> ${date}</p>
+    </div>
+
+    <p>If you have any questions, feel free to contact us at <a href="mailto:${contactEmail}">${contactEmail}</a>.</p>
+
+    <p>Thank you for choosing our institute!</p>
+
+    <div class="footer">
+        <p>© ${year} Your Institute Name. All rights reserved.</p>
+    </div>
+</div>
+</body>
+</html>
