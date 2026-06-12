@@ -20,13 +20,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/course")
+@RequestMapping("/Courses")
 @CrossOrigin("*")
 public class PaymentControll {
 
     @Autowired
     private Paymentservice stripeService;
-
 
     @Autowired
     private RazorpayService razorpayService;

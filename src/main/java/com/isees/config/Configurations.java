@@ -42,7 +42,7 @@ public class Configurations implements WebMvcConfigurer {
                                 "/student/**",
                                 "/application/**",
                                 "/dashboard/**",
-                                "/courses/**",
+                                "/Courses/**",
                                 "/payment/**",
                                 "/question/**",
                                 "/exam/**",
